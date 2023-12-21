@@ -1,0 +1,30 @@
+{
+    "images_folder": "your folder for images",
+    "sources": {
+      "entrance": {
+        "source": "rtsp://user:password@your ip:port/1",
+        "interval": "900",
+        "quality": "100",
+        "color": "YELLOW"
+      },
+      "garden": {
+        "source": "rtsp://user:password@your ip:port/1",
+        "interval": "900",
+        "quality": "100",
+        "color": "GREEN"
+      },
+      "back": {
+        "source": "rtsp://user:password@your ip:port/1",
+        "interval": "900",
+        "quality": "100",
+        "color": "BLUE"
+      },
+      "gardenSouth": {
+        "source": "rtsp://user:password@your ip:port/1",
+        "interval": "900",
+        "quality": "100",
+        "color": "PURPLE"
+      }
+    }
+  }
+  

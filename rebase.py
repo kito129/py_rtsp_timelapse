@@ -13,10 +13,10 @@ def move_files_to_main_folder(source_folder, destination_folder):
             count += 1
             print (f'Moved: {file} to {destination_folder}')
                 
-        for direct in directory:
-            if direct != 'MAIN':
-                shutil.rmtree(os.path.join(root, direct))
-                print(f'Removed: {direct}')
+        #for direct in directory:
+        #    if direct != 'MAIN':
+        #        shutil.rmtree(os.path.join(root, direct))
+        #        print(f'Removed: {direct}')
     
     print(f'Total files moved: {count}, in {source_folder.split("/")[-1]}')
 

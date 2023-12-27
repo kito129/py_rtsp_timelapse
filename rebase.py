@@ -20,7 +20,8 @@ def move_files_to_main_folder(source_folder, destination_folder):
     
     print(f'Total files moved: {count}, in {source_folder.split("/")[-1]}')
 
-# Replace 'source_folder_path' with your actual source folder path
+
+
 source_folder_path = ['D:/00_projects/02_homeAutomation/06_py_rtsp_timelapse/DATA/back',
                       'D:/00_projects/02_homeAutomation/06_py_rtsp_timelapse/DATA/entrance',
                       'D:/00_projects/02_homeAutomation/06_py_rtsp_timelapse/DATA/gardenSouth',

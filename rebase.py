@@ -4,14 +4,13 @@ import shutil
 def move_files_to_main_folder(source_folder, destination_folder):
     count = 0
     for root, directory, files in os.walk(source_folder):
-        if os.path.basename(root) == 'MAIN':
-            continue
-        for file in files:
-            subfolder_path = os.path.join(root, file)
-            destination_path = os.path.join(destination_folder, file)
-            shutil.move(subfolder_path, destination_path)
-            count += 1
-            print (f'Moved: {file} to {destination_folder}')
+        if not (os.path.basename(root) == 'MAIN' or os.path.basename(root) == 'DAY'):
+            for file in files:
+                subfolder_path = os.path.join(root, file)
+                destination_path = os.path.join(destination_folder, file)
+                shutil.move(subfolder_path, destination_path)
+                count += 1
+                print (f'Moved: {file} to {destination_folder}')
                 
         #for direct in directory:
         #    if direct != 'MAIN':

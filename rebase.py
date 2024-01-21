@@ -4,7 +4,7 @@ import shutil
 def move_files_to_main_folder(source_folder, destination_folder):
     count = 0
     for root, directory, files in os.walk(source_folder):
-        if not (os.path.basename(root) == 'MAIN' or os.path.basename(root) == 'DAY'):
+        if not (os.path.basename(root) == 'MAIN' or os.path.basename(root) == 'DAY' or os.path.basename(root).startswith('CHEC')):
             for file in files:
                 subfolder_path = os.path.join(root, file)
                 destination_path = os.path.join(destination_folder, file)
